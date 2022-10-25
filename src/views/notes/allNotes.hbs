@@ -1,0 +1,55 @@
+<h1 >All Games</h1>
+ {{!-- <pre>{{allNotes}}</pre> --}}
+
+<div class="row">
+    {{#each allNotes}}
+    <div class="col-md-3">
+        <div class="card">
+        <div class="card-body ">
+            <div class="input-game">
+            <h6>vs {{rival}}</h6>
+            </div>
+                       
+        <div class="input-game">
+             <h4>{{points}}</h4>
+            <p> Pts</p>
+        </div>
+        <div class="input-game">
+            <h4>{{assists}}</h4>
+            <p> Ast</p>
+        </div>
+        <div class="input-game">
+            <h4>{{rebounds}}</h4>
+            <p> Rbs</p>
+        </div>
+        <div class="input-game">
+            <h4>{{steals}} </h4>
+            <p> Stl</p>
+        </div>
+        <div class="input-game">
+            <h4>{{fouls}} </h4> 
+            <p> Fls</p>
+        </div>
+        <div class="gameButtons">
+             {{!-- <a href="/notes/edit/{{_id}}">  --}}
+          <a href="/notes/edit/{{_id}}">
+            <button class="btn btn-warning btn-sm" > 🖉</button>
+          </a>
+             {{!-- </a> --}}
+
+
+
+
+            <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+             <input type="hidden" name="_method" value="DELETE"/>
+            <button class="btn btn-danger btn-sm"> X </button>
+            </form>
+        </div>
+                    
+
+        </div>
+        </div>
+    </div>
+    {{/each}}
+
+</div>

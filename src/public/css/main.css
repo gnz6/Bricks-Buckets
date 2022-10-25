@@ -1,0 +1,53 @@
+body{
+    
+}
+
+.input-game{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.containerEdit{
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.formEdit{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px
+}
+
+.botonEdit{
+    grid-column-start: 2;
+}
+
+.logo{
+width: 30%;
+}
+
+.logout{
+    color: orange;
+}
+
+.statsContainer{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+}

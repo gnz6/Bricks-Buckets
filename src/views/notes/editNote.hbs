@@ -1,0 +1,58 @@
+<div class="containerEdit">
+        <div class="card-header">
+            <h2>Edit Game</h2>
+        </div>
+        <div class="card-body">
+            {{!-- <form action="notes/edit/{{note.id}}?_method=PUT" method="POST" class="formEdit">
+            <input type="hidden" name="_method" value="PUT"/> --}}
+
+            <form action="/notes/edit/{{note._id}}?_method=PUT" method="POST" class="formEdit">
+             <input type="hidden" name="_method" value="PUT"/>
+            
+      <div class="form-group">
+        <label>Rival:
+            
+        <input type="text" name="rival" class="form-control"  value="{{note.rival}}" />
+        </label>
+      </div>
+
+
+      <div class="form-group">
+        <label>Points:
+        <input name="points" type="number" class="form-control" value="{{note.points}}"/>
+        </label>
+      </div> 
+
+       <div class="form-group">
+         <label>Assists:
+        <input name="assists" type="number" class="form-control" placeholder="assists" value="{{note.assists}}"/>
+         </label>
+      </div> 
+
+       <div class="form-group">
+        <label>Rebounds:
+
+        <input name="rebounds" type="number" class="form-control" placeholder="rebounds" value="{{note.rebounds}}" autofocus/>
+        </label>
+      </div> 
+
+       <div class="form-group">
+         <label>Steals:
+
+        <input name="steals" type="number" class="form-control" placeholder="steals" value="{{note.steals}}" autofocus/>
+         </label>
+      </div> 
+
+      <div class="form-group">
+        <label>Fouls
+
+        <input name="fouls" type="number" class="form-control" placeholder="fouls" value="{{note.fouls}}"autofocus/>
+        </label>
+      </div> 
+
+        <button class="btn btn-primary btn-block botonEdit">Save Changes</button>
+
+            </form>
+        </div>
+</div>
+
